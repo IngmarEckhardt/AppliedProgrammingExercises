@@ -1,6 +1,5 @@
 package de.htwk.aopproject.algorithmexercises;
 
-import de.htwk.aopproject.Exercises;
 import de.htwk.aopproject.service.Stopwatch;
 import de.htwk.aopproject.service.UserInput;
 

@@ -6,7 +6,6 @@ import de.htwk.aopproject.algorithmexercises.ADSFactory;
 import de.htwk.aopproject.aopexercises.AOPFactory;
 import de.htwk.aopproject.eulerproblems.EulerFactory;
 import de.htwk.aopproject.service.BeanConfigService;
-import de.htwk.aopproject.service.UserInput;
 
 public class Application {
 

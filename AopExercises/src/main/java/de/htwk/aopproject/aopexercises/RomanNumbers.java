@@ -1,18 +1,15 @@
 package de.htwk.aopproject.aopexercises;
 
-import de.htwk.aopproject.service.Stopwatch;
 import de.htwk.aopproject.service.UserInput;
 
 class RomanNumbers extends AOPExercises {
-	private String description, result;
-	private int id, decimalNumber;
+	private String result;
+	private int decimalNumber;
 	private UserInput userInput;
-	private Stopwatch stopwatch;
-
-	RomanNumbers(int id, UserInput userInput, Stopwatch stopwatch) {
+	
+	RomanNumbers(int id, UserInput userInput) {
 		super(id, "Dezimalzahlen in römische Zahlen umrechen");
 		this.userInput = userInput;
-		this.stopwatch = stopwatch;
 	}
 
 	Object getResultImpl() {

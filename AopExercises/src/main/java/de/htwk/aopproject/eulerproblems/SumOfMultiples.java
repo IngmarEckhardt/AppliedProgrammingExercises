@@ -1,15 +1,12 @@
 package de.htwk.aopproject.eulerproblems;
 
 import de.htwk.aopproject.service.Stopwatch;
-import de.htwk.aopproject.service.UserInput;
 
 class SumOfMultiples extends Eulerproblem {
-	private UserInput userInput;
 	private Stopwatch stopwatch;
 	
-	public SumOfMultiples(Integer id, UserInput userInput, Stopwatch stopwatch) {
+	public SumOfMultiples(Integer id, Stopwatch stopwatch) {
 		super(id, "Eulerproblem 1, Summe der Produkte von 3 und 5 bis 1000");
-		this.userInput = userInput;
 		this.stopwatch = stopwatch;
 	}
 	@Override

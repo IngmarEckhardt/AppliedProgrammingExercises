@@ -1,15 +1,12 @@
 package de.htwk.aopproject.eulerproblems;
 
 import de.htwk.aopproject.service.Stopwatch;
-import de.htwk.aopproject.service.UserInput;
 
 class EvenFibonaccis extends Eulerproblem {
-	private UserInput userInput;
 	private Stopwatch stopwatch;
 
-	public EvenFibonaccis(Integer id, UserInput userInput, Stopwatch stopwatch) {
+	public EvenFibonaccis(Integer id, Stopwatch stopwatch) {
 		super(id, "Eulerproblem 2, Summe gerader Fibonacci-Zahlen bis 4Mio");
-		this.userInput = userInput;
 		this.stopwatch = stopwatch;
 	}
 
