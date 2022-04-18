@@ -6,6 +6,7 @@ class AopprojectApplicationTests {
 
 	@Test
 	void contextLoads() {
+		test;
 	}
 
 }
