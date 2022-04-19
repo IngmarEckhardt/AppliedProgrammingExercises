@@ -12,10 +12,11 @@ public class SumSquareDifference extends Eulerproblem {
 
 	@Override
 	Object getResultImpl() {
+		stopwatch.startClock();
 		long result = 0;
 		
 		result = squareOfSum(100) - sumOfSquares(100);
-		System.out.println("Die Differenz beträgt " + result);
+		System.out.println("Die Differenz beträgt " + result + ". Der Algorithmus brauchte " + stopwatch.getDuration() + "mikrosek.");
 		return result;
 	}
 

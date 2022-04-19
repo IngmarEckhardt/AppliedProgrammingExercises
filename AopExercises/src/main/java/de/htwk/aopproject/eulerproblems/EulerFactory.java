@@ -35,6 +35,10 @@ public class EulerFactory extends Factory {
 			return new SmallestMultiple(counter, stopwatch);
 		case 6:
 			return new SumSquareDifference(counter, stopwatch);
+		case 7:
+			return new PrimeNumberTenthousandOne(counter, stopwatch, primeFactory);
+		case 8:
+			return new LargestProduct(counter, stopwatch);
 				
 		default:
 			counter--;
