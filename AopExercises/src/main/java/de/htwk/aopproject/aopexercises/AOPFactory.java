@@ -20,7 +20,7 @@ public class AOPFactory extends Factory {
 		counter++;
 		switch (counter) {
 		case 1:
-			return new RomanNumbers(counter, userInput, stopwatch);
+			return new RomanNumbers(counter, userInput);
 		default:
 			counter--;
 			return null;

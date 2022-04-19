@@ -20,6 +20,11 @@ public class BeanConfigService {
 	}
 	
 	@Bean
+	public PrimeFactory primeFactory () {
+		return new PrimeFactoryImpl();
+	}
+	
+	@Bean
 	BufferedReader bufferedReader() {
 		return new BufferedReader(new InputStreamReader(System.in));
 	}
