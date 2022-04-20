@@ -25,6 +25,11 @@ public class BeanConfigService {
 	}
 	
 	@Bean
+	public Calculator calculator () {
+		return new Calculator(userInput());
+	}
+	
+	@Bean
 	BufferedReader bufferedReader() {
 		return new BufferedReader(new InputStreamReader(System.in));
 	}

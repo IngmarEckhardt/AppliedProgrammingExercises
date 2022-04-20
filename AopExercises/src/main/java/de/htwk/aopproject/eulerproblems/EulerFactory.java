@@ -39,6 +39,10 @@ public class EulerFactory extends Factory {
 			return new PrimeNumberTenthousandOne(counter, stopwatch, primeFactory);
 		case 8:
 			return new LargestProduct(counter, stopwatch);
+		case 9:
+			return new SumOfPrimes(counter, stopwatch, primeFactory);
+		case 10:
+			return new LargestProductInGrid(counter, stopwatch);
 				
 		default:
 			counter--;

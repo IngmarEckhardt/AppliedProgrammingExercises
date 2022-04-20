@@ -35,7 +35,7 @@ class PrimeFactor extends Eulerproblem {
 	private String getPrimeFactorization(Long product) {
 		long factor = 1;
 		int primeIndex = 1, exponent = 0;
-		String result = "Die Primfaktoren von " + product.toString() + " sind: 1";
+		String result = "Die Primfaktoren von " + product + " sind: 1";
 		
 		while (product != 1) {
 
@@ -59,7 +59,7 @@ class PrimeFactor extends Eulerproblem {
 	private String getPrimeFactorizationVers2(Long product) {
 		int exponent = 0;
 		long factor = 1;
-		String result  = "Die Primfaktoren von " + product.toString() + " sind: 1";
+		String result  = "Die Primfaktoren von " + product + " sind: 1";
 		
 		while (product != 1) {
 			exponent = 0;
