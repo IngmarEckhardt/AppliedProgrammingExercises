@@ -67,7 +67,7 @@ class DynamicDeviation extends AOPExercises {
 	}
 	
 	public Boolean resetDynamicArray () {
-		if (dynamicValues == null) return null;
+		if (dynamicValues == null) return false;
 		dynamicValues.clear();
 		dynamicAverage = 0d;
 		lastDynamicAverage = 0d;
@@ -76,6 +76,7 @@ class DynamicDeviation extends AOPExercises {
 	}
 
 	private double[] getRandomField() {
+		if (random == null) return null;
 		int randomInt = Math.abs(random.nextInt(10000000));
 		double[] randomfield = new double[randomInt];
 		

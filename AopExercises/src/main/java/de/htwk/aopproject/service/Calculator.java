@@ -3,10 +3,10 @@ package de.htwk.aopproject.service;
 import java.util.Arrays;
 
 public class Calculator {
-	private UserInput usperInput;
+	private UserInput userInput;
 	
 	public Calculator (UserInput userInput) {
-		this.usperInput = userInput;
+		this.userInput = userInput;
 	}
 	
 	public double calcAverage(double[] values) {
