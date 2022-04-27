@@ -11,7 +11,7 @@ class DynamicDeviation extends AOPExercises {
 	private double[] values;
 	private ArrayList<Double> dynamicValues;
 	private int counter;
-	private Double average, median, sigma, dynamicAverage, dynamicSigma;
+	private Double average, median, sigma, dynamicAverage, dynamicSigma, dynamicS;
 	private double lastDynamicAverage;
 
 	public DynamicDeviation(Integer id, Calculator calculator) {
@@ -19,6 +19,8 @@ class DynamicDeviation extends AOPExercises {
 		this.random = new Random(System.nanoTime());
 		this.calculator = calculator;
 		dynamicValues = new ArrayList<Double>();
+		dynamicS = 0d;
+		
 	}
 
 	@Override
@@ -42,14 +44,13 @@ class DynamicDeviation extends AOPExercises {
 	
 
 	public Double calcDynamicDeviation (Double valueToAdd) {
-		Double result = -1.0, dynamicS = null;
+		Double result = -1.0;
 		if (valueToAdd == null) return null;
 
 		dynamicValues.add(valueToAdd);
 		
 		if (dynamicAverage == null) {
 			dynamicAverage = valueToAdd;
-			dynamicS = 0d;
 			lastDynamicAverage = valueToAdd;
 			counter = 1;
 		} else {
@@ -71,6 +72,7 @@ class DynamicDeviation extends AOPExercises {
 		dynamicValues.clear();
 		dynamicAverage = 0d;
 		lastDynamicAverage = 0d;
+		dynamicS = 0d;
 		
 		return true;
 	}
